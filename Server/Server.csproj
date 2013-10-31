@@ -86,6 +86,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SharedWeb\SharedWeb.csproj">
+      <Project>{A62B39DC-53A2-4AF9-8B04-FB402B3759D7}</Project>
+      <Name>SharedWeb</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shared\Shared.csproj">
       <Project>{9e072fa8-0365-4ced-ae09-0887b2f5a053}</Project>
       <Name>Shared</Name>
