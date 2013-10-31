@@ -6,18 +6,18 @@ namespace Shared
     public class Message
     {
         [JsonProperty("body")] private readonly string _body;
-        [JsonProperty("dateTime")] private readonly DateTime _dateTime;
+        [JsonProperty("dateTime")] private readonly long _ticks;
 
         [JsonConstructor]
-        public Message(DateTime dateTime, string body)
+        public Message(long ticks, string body)
         {
-            _dateTime = dateTime;
+            _ticks = ticks;
             _body = body;
         }
 
-        public DateTime DateTime
+        public long Ticks
         {
-            get { return _dateTime; }
+            get { return _ticks; }
         }
 
         public string Body
